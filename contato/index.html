@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato · Mapa’s</title>
+<meta name="description" content="Fale com a Mapa’s: suporte dos apps, sugestões e parcerias.">
+<link rel="canonical" href="https://matheusmapa.github.io/apps/contato/">
+<meta name="theme-color" content="#f4f2ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131311" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Mapa’s">
+<meta property="og:title" content="Contato · Mapa’s">
+<meta property="og:description" content="Fale com a Mapa’s: suporte dos apps, sugestões e parcerias.">
+<meta property="og:url" content="https://matheusmapa.github.io/apps/contato/">
+<meta property="og:image" content="https://matheusmapa.github.io/apps/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../assets/img/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/img/favicon-48.png" alt="" width="30" height="30">Mapa’s</a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="../sobre/">Sobre</a>
+      <a href="../contato/" aria-current="page">Contato</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+  <article class="wrap narrow doc">
+    <h1>Contato</h1>
+    <p class="meta">Suporte dos apps, sugestões, imprensa e parcerias.</p>
+    <p class="big-mail"><a href="mailto:menrique757@gmail.com">menrique757@gmail.com</a></p>
+    <p>Se for sobre um app, diga qual é e, se puder, o modelo do celular. Quem responde é quem faz o app.</p>
+
+    <h2>Escrever por aqui</h2>
+    <p class="muted">O formulário só monta a mensagem e abre o seu app de e-mail. Nada é enviado por este site.</p>
+    <form class="form" id="contato-form">
+      <label>Sobre o quê
+        <select name="assunto"><option value="">Assunto geral</option><option>Studz</option><option>Na Geladeira</option><option>Constante</option><option>Lacre</option><option>Folga</option></select>
+      </label>
+      <label>Mensagem
+        <textarea name="mensagem" required></textarea>
+      </label>
+      <button class="btn btn-solid" type="submit">Abrir no meu e-mail</button>
+    </form>
+
+    <h2>Apagar seus dados</h2>
+    <p>Nossos apps guardam tudo no seu celular, então na maioria dos casos basta apagar os dados no próprio app ou desinstalar. Cada política explica o passo a passo:</p>
+    <ul>
+      <li><a href="../studz/privacy.html#exclusao">Studz</a></li>
+      <li><a href="../geladeira/privacy.html#exclusao">Na Geladeira</a></li>
+      <li><a href="../constante/privacy.html#exclusao">Constante</a></li>
+      <li><a href="../lacre/privacy.html#exclusao">Lacre</a></li>
+      <li><a href="../folga/privacy.html#exclusao">Folga</a></li>
+    </ul>
+  </article>
+</main>
+<script>
+document.getElementById("contato-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var f = e.target;
+  var app = f.assunto.value;
+  var subject = app ? app + " - contato pelo site" : "Contato pelo site";
+  location.href = "mailto:menrique757@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(f.mensagem.value);
+});
+</script>
+<footer class="site-foot">
+  <div class="wrap cols">
+    <div>
+      <p><strong>Mapa’s</strong></p>
+      
+      <p>Conselheiro Lafaiete, MG, Brasil</p>
+      <p><a href="mailto:menrique757@gmail.com">menrique757@gmail.com</a></p>
+    </div>
+    <div>
+      <p class="h">Apps</p>
+      <ul><li><a href="../studz/">Studz</a></li><li><a href="../geladeira/">Na Geladeira</a></li><li><a href="../constante/">Constante</a></li><li><a href="../lacre/">Lacre</a></li><li><a href="../folga/">Folga</a></li></ul>
+    </div>
+    <div>
+      <p class="h">Empresa</p>
+      <ul>
+        <li><a href="../sobre/">Sobre</a></li>
+        <li><a href="../contato/">Contato</a></li>
+        <li><a href="../privacidade/">Privacidade deste site</a></li>
+      </ul>
+      <p style="margin-top:18px">© 2026 Mapa’s</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
