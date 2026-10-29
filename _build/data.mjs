@@ -40,7 +40,7 @@ export const APPS = [
     category: "Educação",
     schemaCategory: "EducationalApplication",
     accent: "#B9DB2C",
-    status: "testing",
+    status: "live",
     soonText: "Está em teste fechado e chega à loja na segunda quinzena de outubro de 2026.",
     playUrl: "https://play.google.com/store/apps/details?id=com.Studz.app",
     pitch: "Foco, flashcards e revisão espaçada. Sem cadastro, tudo no seu celular.",
