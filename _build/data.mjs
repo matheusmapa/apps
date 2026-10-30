@@ -66,7 +66,7 @@ export const APPS = [
       "Estatísticas de estudo com gráfico",
       "Lista de métodos de estudo do app",
     ],
-    updated: { privacy: "1 de outubro de 2026", terms: "1 de outubro de 2026" },
+    updated: { privacy: "29 de outubro de 2026", terms: "29 de outubro de 2026" },
   },
   {
     slug: "geladeira",
@@ -122,7 +122,7 @@ export const APPS = [
     ],
     shots: [],
     featureAlt: "Constante: hábitos, um dia de cada vez",
-    updated: { privacy: "5 de outubro de 2026", terms: "5 de outubro de 2026" },
+    updated: { privacy: "15 de outubro de 2026", terms: "5 de outubro de 2026" },
   },
   {
     slug: "lacre",
