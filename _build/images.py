@@ -25,6 +25,7 @@ APPS = {
     "constante": "constante",
     "lacre": "lacre",
     "folga": "folga",
+    "chamada": "chamada",
 }
 
 
